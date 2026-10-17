@@ -1,8 +1,15 @@
 from django.shortcuts import render
+from django.conf import settings
 
-# Create your views here.
+
 def home(request):
+
+    context = {
+        'tag_title': f'{settings.SITENAME}'
+    }
+
     return render(
         request,
-        'projetinho/home.html'
+        'projetinho/home.html',
+        context
     )
