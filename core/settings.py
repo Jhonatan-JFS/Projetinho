@@ -72,15 +72,15 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
-'''
-Configurações para MySQL
+
+# Configurações para MySQL
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'projetinho',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'jhonatan.furtado@123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
@@ -88,6 +88,7 @@ DATABASES = {
         },
     }
 }
+# Configurações para SQLite
 '''
 DATABASES = {
     'default': {
@@ -95,7 +96,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
 
